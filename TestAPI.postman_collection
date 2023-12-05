@@ -1,0 +1,121 @@
+{
+	"info": {
+		"_postman_id": "bcc78130-905f-4a8f-a82b-a428feb94ced",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20579552"
+	},
+	"item": [
+		{
+			"name": "All Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v1/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Add User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "17f27fd87e8e0ff819c3c09855241ff3b0f30008af47463af7571b6389b80f6e"
+					}
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"windiany\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"windiany@yopmail.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users"
+			},
+			"response": []
+		},
+		{
+			"name": "Specific User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "17f27fd87e8e0ff819c3c09855241ff3b0f30008af47463af7571b6389b80f6e"
+					}
+				},
+				"method": "GET",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/1009791"
+			},
+			"response": []
+		},
+		{
+			"name": "Edit User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "17f27fd87e8e0ff819c3c09855241ff3b0f30008af47463af7571b6389b80f6e"
+					}
+				},
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"windiany123\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"windiany@yopmail.com\",\r\n    \"status\": \"active\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users/1009631"
+			},
+			"response": []
+		},
+		{
+			"name": "Update Status",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "17f27fd87e8e0ff819c3c09855241ff3b0f30008af47463af7571b6389b80f6e"
+					}
+				},
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"windiany123\",\r\n    \"gender\": \"female\",\r\n    \"email\": \"windiany@yopmail.com\",\r\n    \"status\": \"inactive\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "https://gorest.co.in/public/v2/users/1009631"
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": {
+						"token": "17f27fd87e8e0ff819c3c09855241ff3b0f30008af47463af7571b6389b80f6e"
+					}
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": "https://gorest.co.in/public/v2/users/1009791"
+			},
+			"response": []
+		}
+	]
+}
